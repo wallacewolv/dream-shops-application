@@ -1,5 +1,7 @@
 package com.wwdev.dream_shops.model;
 
+import com.wwdev.dream_shops.model.Product;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -21,7 +23,7 @@ public class Image {
     private String fileType;
 
     @Lob
-    private Blob blob;
+    private Blob image;
     private String downloadUrl;
 
     @ManyToOne
