@@ -1,11 +1,12 @@
 package com.wwdev.dream_shops.service.product;
 
 import com.wwdev.dream_shops.model.Product;
+import com.wwdev.dream_shops.request.AddProductRequest;
 
 import java.util.List;
 
 public interface IProductService {
-    Product addProduct(Product product);
+    Product addProduct(AddProductRequest request);
     Product getProductById(Long id);
     void deleteProductById(Long id);
     void updateProduct(Product product, Long productId);
